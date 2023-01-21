@@ -13,20 +13,17 @@ import {
     Button,
     Divider
 } from 'react-native-paper';
-import { useNavigation } from '@react-navigation/native'
-
 
 import { appImages } from '../../../assets/utilities/index'
 import styles from './styles';
 import { ScrollView } from 'react-native-gesture-handler';
 
 
-const SignIn = () => {
+const SignIn = ({navigation}) => {
     const [email, setemail] = useState("")
     const [pass, setpass] = useState("")
     const [check, setcheck] = useState(false)
-    const navigation = useNavigation()
-
+    
     // const LoginUser = () => {
     //     // navigation.navigate("Home")
     // }
